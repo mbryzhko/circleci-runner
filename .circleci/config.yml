@@ -17,6 +17,12 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run:
+          name: "Terraform version"
+          command: "terraform --version"
+      - run:
+          name: "Terragrunt version"
+          command: "terragrunt --version"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
